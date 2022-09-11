@@ -1,4 +1,4 @@
-button {
+.add-button {
     width: 100px;
     background-color: chartreuse;
     border: none;
@@ -7,6 +7,6 @@ button {
     border-radius: 5px;
 }
 
-button:hover {
+.add-button:hover {
     background-color: rgb(180, 253, 106);
 }

@@ -8,7 +8,6 @@ const AddTask = ({ handleTaskAddition }) => {
 
     const handleInputChange = (e) => {
         let inputValue = e.target.value;
-        console.log(inputValue);
         setInputData(inputValue);
     }
 
@@ -21,7 +20,9 @@ const AddTask = ({ handleTaskAddition }) => {
 
     return (
         <div className='add-task-container'>
-            <input onChange={handleInputChange} value={inputData} type="text" className='add-task-input'/>
+            <input onChange={handleInputChange} placeholder='Adicionar tarefa'
+                value={inputData} type="text" className='add-task-input'
+            />
             <Button onClick={handleTaskAdd}/>
         </div>
     )

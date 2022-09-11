@@ -8,3 +8,19 @@
     color: #eee;
     align-items: center;
 }
+
+.task-title {
+    width: 100%;
+}
+
+.task-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.remove-task, .details-task {
+    background-color: #444;
+    border: none;
+    color: chartreuse;
+    font-size: 20px;
+}

@@ -36,13 +36,20 @@ const App = () => {
 		setTasks(newTasks);
 	}
 
+	const removeTask = (taskId) => {
+		const newTasks = tasks.filter((task) => task.id !== taskId)
+
+		setTasks(newTasks);
+	}
+
 	return(
 		<div className='container'>
 			<div className="header">
-				<h1>Tarefas</h1>
+					<h1>Tarefas</h1>
 			</div>
+
 			<AddTasks handleTaskAddition={handleTaskAddition}/>
-			<Tasks tasks={tasks} handleTaskClick={handleTaskClick}/> {/* importando componente e passando props */}
+			<Tasks tasks={tasks} handleTaskClick={handleTaskClick} removeTask={removeTask}/> {/* importando componente e passando props */}
 		</div>
 	)
 };
