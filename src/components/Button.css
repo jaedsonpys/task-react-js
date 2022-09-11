@@ -1,0 +1,12 @@
+button {
+    width: 100px;
+    background-color: chartreuse;
+    border: none;
+    color: rgb(51, 51, 51);
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: rgb(180, 253, 106);
+}
